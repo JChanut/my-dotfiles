@@ -1,0 +1,20 @@
+[user]
+    name = Jerry Chanut
+    email = j.chanut@gmail.com
+[color]
+    # Enable colors in color-supporting terminals
+    ui = auto
+[core]
+    # VSCode
+    editor = code --wait
+[diff]
+    # Use VSCode as default diff tool when running `git diff-tool`
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[pull]
+    rebase = merges
+
+[color "branch"]
+    # Blue on black is hard to read in git branch -vv: use cyan instead
+    upstream = cyan
