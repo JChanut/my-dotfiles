@@ -49,7 +49,7 @@ default_color FFFFFF
 color1 DDDDDD
 color2 AAAAAA
 color3 888888
-color4 1734F0
+color4 1793D1
 
 xinerama_head 2
 
@@ -89,6 +89,6 @@ ${offset 55}${font Ubuntu:normal:size=7}${color}Used: ${fs_used /}
 ${voffset 65}
 ${offset 10}${font Ubuntu:bold:size=7}${color}ETHERNET             WIRELESS
 ${offset 10}${color2}${addr enp0s25}${alignr}${addr wlan0}
-#${offset 10}${color}Up: $color2${upspeed eth0} ${alignr}${color}Down: $color2${downspeed wlan0}
-#${offset 10}${color}Down: $color2${downspeed eth0} ${alignr}${color}Down: $color2${downspeed wlan0}
+#${offset 10}${color}Up: $color2${upspeed enp0s25} ${alignr}${color}Down: $color2${downspeed wlan0}
+#${offset 10}${color}Down: $color2${downspeed enp0s25} ${alignr}${color}Down: $color2${downspeed wlan0}
 ${color4}${hr 2}
