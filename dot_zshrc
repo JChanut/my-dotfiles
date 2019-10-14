@@ -94,9 +94,9 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Java
-export JAVA_HOME="/usr/lib/jvm/jre"
-export PATH="$JAVA_HOME/bin:$PATH"
+# Java (handled by pacman java-runtime-common package)
+# see https://wiki.archlinux.org/index.php/Java
+source /etc/profile.d/jre.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
