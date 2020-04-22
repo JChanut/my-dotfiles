@@ -64,6 +64,10 @@ input type:keyboard {
     xkb_layout fr
 }
 
+input * {
+    natural_scroll enabled
+}
+
 ### Key bindings
 #
 # Basics:
@@ -224,3 +228,6 @@ bar {
 default_border pixel
 
 include /etc/sway/config.d/*
+
+# Start some apps
+exec mako
