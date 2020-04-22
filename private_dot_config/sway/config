@@ -122,9 +122,9 @@ input type:keyboard {
     bindsym $mod+quotedbl workspace 3
     bindsym $mod+apostrophe workspace 4
     bindsym $mod+parenleft workspace 5
-    bindsym $mod+minus workspace 6	# +section on Apple keyboards
+    bindsym $mod+minus workspace 6
     bindsym $mod+egrave workspace 7
-    bindsym $mod+underscore workspace 8	# +exclam on Apple keyboards
+    bindsym $mod+underscore workspace 8
     bindsym $mod+ccedilla workspace 9
     bindsym $mod+agrave workspace 10
     # Move focused container to workspace
