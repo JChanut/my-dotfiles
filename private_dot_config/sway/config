@@ -18,7 +18,7 @@ set $term termite
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu dmenu_path | wofi -d | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -213,7 +213,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Lock the screen
-bindsym $mod+m exec swaylocki
+bindsym $mod+m exec swaylock
 
 # Control Volume, Mic and brightnes
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
