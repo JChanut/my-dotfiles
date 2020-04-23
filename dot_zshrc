@@ -99,6 +99,8 @@ alias ls="lsd"
 # see https://wiki.archlinux.org/index.php/Java
 source /etc/profile.d/jre.sh
 
+export BAT_THEME='OneHalfDark'
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
