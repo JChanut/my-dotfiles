@@ -237,3 +237,7 @@ include /etc/sway/config.d/*
 
 # Start some apps
 exec mako
+
+# Systemd integration
+# See: https://github.com/swaywm/sway/wiki/Systemd-integration 
+exec "systemctl --user import-environment; systemctl --user start sway-session.target"
