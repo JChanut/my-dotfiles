@@ -242,7 +242,7 @@ default_border pixel
 include /etc/sway/config.d/*
 
 # Start some apps
-exec mako
+exec mako --default-timeout 5000
 
 # Systemd integration
 # See: https://github.com/swaywm/sway/wiki/Systemd-integration 
