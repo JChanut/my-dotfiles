@@ -74,9 +74,15 @@ input type:touchpad {
     natural_scroll enabled
 }
 
+### Default workspaces for common programs
+assign [class="Termite"] 1
+assign [class="Firefox"] 2
+assign [class="Spotify"] 4
+assign [class="Microsoft Teams - Preview"] 5
+
 ### Key bindings
 #
-# Basics:
+## Basics:
 #
     # Start a terminal
     bindsym $mod+Return exec $term
