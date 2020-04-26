@@ -94,6 +94,7 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="lsd"
+alias n="nnn -d"
 
 # Java (handled by pacman java-runtime-common package)
 # see https://wiki.archlinux.org/index.php/Java

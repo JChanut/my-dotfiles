@@ -164,6 +164,10 @@ label:focus {
     background-color: #ffa000;
 }
 
+#custom-pacman {
+    background-color: #1794D1;
+}
+
 #temperature {
     background-color: #f0932b;
 }
