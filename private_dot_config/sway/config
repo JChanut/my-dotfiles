@@ -18,7 +18,7 @@ set $term termite
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | wofi -d | xargs swaymsg exec --
+set $menu wofi --show=drun | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -249,6 +249,9 @@ include /etc/sway/config.d/*
 #exec mako --default-timeout 5000
 exec termite
 exec firefox
+# Launch Gnome xsettings for X App
+# See https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland
+exec /usr/lib/gsd-xsettings
 
 # Systemd integration
 # See: https://github.com/swaywm/sway/wiki/Systemd-integration 
