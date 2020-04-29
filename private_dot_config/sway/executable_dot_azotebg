@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-pkill swaybg
-swaybg -o* -i '/home/jerry/Pictures/train-and-mountain.jpg' -m fill &
