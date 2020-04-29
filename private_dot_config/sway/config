@@ -87,6 +87,10 @@ assign [class="Signal"] workspace 5
 for_window [app_id="termite" title="sudo pacman -Syu"] floating enable
 for_window [app_id="termite" title="nmtui"] floating enable
 
+### Showing in wich mode run a window (wayland native or xwayland)
+# xwayland clients will show xwayland and native wayland clients will show xdg-shell
+# for_window [shell=".*"] title_format "%title :: %shell"
+
 ### Key bindings
 #
 ## Basics:
