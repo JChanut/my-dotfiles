@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=nmtui
+Type=Application
+Comment=NetworkManager ncurse application
+Exec=termite -e nmtui
+Icon=application-network
+Terminal=false
