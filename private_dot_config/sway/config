@@ -24,7 +24,8 @@ set $menu wofi --show=drun | xargs swaymsg exec --
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-exec settimed catalina-timed
+#exec settimed catalina-timed
+exec setwallpaper $HOME/Pictures/train-and-mountain.jpg
 
 exec nm-applet --indicator
 
@@ -85,9 +86,10 @@ assign [class="Spotify"] workspace 4
 assign [class="Microsoft Teams - Preview"] workspace 5
 assign [class="Signal"] workspace 5
 
-### Open some window float
+### Open some window float mode
 for_window [app_id="termite" title="sudo pacman -Syu"] floating enable
 for_window [app_id="termite" title="nmtui"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
 
 ### Showing in wich mode run a window (wayland native or xwayland)
 # xwayland clients will show xwayland and native wayland clients will show xdg-shell
