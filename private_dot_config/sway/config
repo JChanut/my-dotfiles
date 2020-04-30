@@ -69,11 +69,13 @@ input type:keyboard {
 
 input * {
     natural_scroll disabled
+    pointer_accel -0.5
 }
 
 input type:touchpad {
     tap enabled
     natural_scroll enabled
+    pointer_accel 0
 }
 
 ### Default workspaces for common programs
