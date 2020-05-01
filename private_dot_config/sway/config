@@ -26,7 +26,6 @@ set $menu wofi --show=drun | xargs swaymsg exec --
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #exec settimed catalina-timed
 exec_always setwallpaper $HOME/Pictures/train-and-mountain.jpg
-
 exec nm-applet --indicator
 
 #
