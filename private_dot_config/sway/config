@@ -91,6 +91,10 @@ for_window [app_id="termite" title="sudo pacman -Syu"] floating enable
 for_window [app_id="termite" title="nmtui"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable
 for_window [app_id="pavucontrol"] floating enable
+for_window [app_id="system-config-printer"] floating enable
+for_window [app_id="blueman-manager"] floating enable
+
+font pango:roboto 10
 
 ### Showing in wich mode run a window (wayland native or xwayland)
 # xwayland clients will show xwayland and native wayland clients will show xdg-shell
