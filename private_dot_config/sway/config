@@ -93,6 +93,7 @@ for_window [app_id="nm-connection-editor"] floating enable
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="system-config-printer"] floating enable
 for_window [app_id="blueman-manager"] floating enable
+for_window [app_id="gnome-tweaks"] floating enable
 
 font pango:SF Pro Text 10
 
