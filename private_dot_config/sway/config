@@ -94,7 +94,7 @@ for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="system-config-printer"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 
-font pango:SF Pro Display 10
+font pango:SF Pro Text 10
 
 ### Showing in wich mode run a window (wayland native or xwayland)
 # xwayland clients will show xwayland and native wayland clients will show xdg-shell
