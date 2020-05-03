@@ -112,7 +112,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"on-click-right": "termite -e nmtui"
+	    "on-click-right": "termite -e nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
