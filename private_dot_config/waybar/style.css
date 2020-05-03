@@ -19,6 +19,10 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+#window {
+    font-weight: bold;
+}
+
 /*
 window#waybar.empty {
     background-color: transparent;

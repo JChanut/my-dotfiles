@@ -82,7 +82,7 @@ input type:touchpad {
 ### Default workspaces for common programs
 assign [app_id="firefox"] workspace 2
 assign [class="Code"] workspace 3
-assign [class="Spotify"] workspace 4
+assign [instance="spotify"] workspace 4
 assign [class="Microsoft Teams - Preview"] workspace 5
 assign [class="Signal"] workspace 5
 
