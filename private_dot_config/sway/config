@@ -95,7 +95,8 @@ for_window [app_id="system-config-printer"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 for_window [app_id="gnome-tweaks"] floating enable
 
-font pango:SF Pro Text 10
+font pango:SF Pro Text 11
+client.focused #5294e2ff #383c4aff #7c818c
 
 ### Showing in wich mode run a window (wayland native or xwayland)
 # xwayland clients will show xwayland and native wayland clients will show xdg-shell
@@ -177,6 +178,8 @@ font pango:SF Pro Text 10
     bindsym $mod+Shift+agrave move container to workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+
+    bindsym ALT+Tab exec $HOME/.config/sway/swytch.sh
 #
 # Layout stuff:
 #
@@ -202,6 +205,11 @@ font pango:SF Pro Text 10
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+#
+# Screenshot:
+#
+    # Screenshot to clipboard
+    bindsym Print exec grim - | wl-copy
 #
 # Scratchpad:
 #
