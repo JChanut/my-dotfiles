@@ -19,6 +19,7 @@ set $term termite
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu wofi --show=drun --allow-images | xargs swaymsg exec --
+set $menu_run wofi --show=run | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -114,6 +115,7 @@ client.focused #5294e2ff #383c4aff #7c818c
 
     # Start your launcher
     bindsym $mod+d exec $menu
+    bindsym $mod+Shift+d exec $menu_run
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -208,8 +210,10 @@ client.focused #5294e2ff #383c4aff #7c818c
 #
 # Screenshot:
 #
-    # Screenshot to clipboard
-    bindsym Print exec grim - | wl-copy
+    # Screenshot  the focused monitor to clipboard
+    bindsym Print exec grimshot --notify copy output
+    # Screenshot the focused window to clipboard
+    bindsym ALT+Print exec grimshot --notify copy active
 #
 # Scratchpad:
 #
