@@ -1,0 +1,13 @@
+# Launch Gnome xsettings for X App
+# https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland
+[Unit]
+Description=Gnome xsettings for X App
+Documentation=https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/gsd-xsettings
+
+[Install]
+WantedBy=sway-session.target

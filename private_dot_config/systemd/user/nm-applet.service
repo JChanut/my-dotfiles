@@ -1,0 +1,11 @@
+[Unit]
+Description=Applet for managing network connections
+Documentation=man:nm-applet(1)
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=nm-applet --indicator
+
+[Install]
+WantedBy=sway-session.target
