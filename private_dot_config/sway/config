@@ -24,9 +24,7 @@ set $menu_run wofi --show=run | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #exec settimed catalina-timed
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always setwallpaper $HOME/Pictures/train-and-mountain.jpg
 exec nm-applet --indicator
 
