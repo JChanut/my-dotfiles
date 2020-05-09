@@ -250,7 +250,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Lock the screen
-bindsym $mod+l exec swaylock-fancy -p
+bindsym $mod+l exec swaylock-fancy --pixelate --ignore-empty-password -f SF-Pro-Text-Regular
 
 # Control Volume, Mic and brightnes
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%

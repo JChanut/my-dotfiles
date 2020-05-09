@@ -8,6 +8,9 @@ endif
 
 set number
 set mouse=a
+set hlsearch
+set tabstop=4
+set autoindent
 let g:airline_powerline_fonts = 1
 
 " Plugins will be downloaded under the specified directory.
