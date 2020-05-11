@@ -212,6 +212,8 @@ client.focused #5294e2ff #383c4aff #7c818c
     bindsym Print exec grimshot --notify copy output
     # Screenshot the focused window to clipboard
     bindsym ALT+Print exec grimshot --notify copy active
+	# Screenshot a region to cliptboard
+	bindsym $mod+Print exec grimshot --notify copy area
 #
 # Scratchpad:
 #
