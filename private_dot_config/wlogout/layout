@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock-fancy -p",
+    "action" : "swaylock-fancy --pixelate --ignore-empty-password -f SF-Pro-Text-Regular",
     "text" : "Lock",
     "keybind" : "l"
 }
