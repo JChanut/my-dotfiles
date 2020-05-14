@@ -93,6 +93,8 @@ for_window [app_id="system-config-printer"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 for_window [app_id="gnome-tweaks"] floating enable
 for_window [app_id="xfce-polkit"] floating enable
+# Fix bug with firefox sharing window
+for_window [app_id="firefox" title="Firefox - Sharing Indicator"] floating enable
 
 font pango:SF Pro Text 11
 client.focused #5294e2ff #383c4aff #7c818c

@@ -1,0 +1,10 @@
+[Unit]
+Description=Pamac Update Notifier Appindicator
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=pamac-tray-appindicator
+
+[Install]
+WantedBy=sway-session.target
