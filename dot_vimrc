@@ -9,8 +9,13 @@ endif
 set number
 set mouse=a
 set hlsearch
+filetype plugin indent on
+" show existing tab with 4 spaces width
 set tabstop=4
-set autoindent
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 let g:airline_powerline_fonts = 1
 
 " Plugins will be downloaded under the specified directory.

@@ -1,0 +1,10 @@
+[Unit]
+Description=Ulauncher daemon
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ulauncher --hide-window
+
+[Install]
+WantedBy=sway-session.target
