@@ -86,7 +86,7 @@ assign [class="Microsoft Teams - Preview"] workspace 5
 assign [class="Signal"] workspace 5
 
 ### Open some window float mode
-for_window [app_id="termite" title="system update"] floating enable
+for_window [app_id="termite" title="^system update$"] floating enable
 for_window [app_id="termite" title="nmtui"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable
 for_window [app_id="pavucontrol"] floating enable
