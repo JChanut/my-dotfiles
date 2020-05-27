@@ -1,0 +1,11 @@
+[Unit]
+Description=wob keyboard backlight service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/bin/wob-kbd-backlight.py
+
+[Install]
+WantedBy=sway-session.target
+
