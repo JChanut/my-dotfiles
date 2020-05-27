@@ -1,0 +1,12 @@
+[Unit]
+Description=wob — Wayland Overlay Bar
+Documentation=man:wob(1)
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=tail -f %t/wobpipe | wob
+
+[Install]
+Also=wob.socket
+WantedBy=sway-session.target

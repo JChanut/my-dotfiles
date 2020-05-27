@@ -1,0 +1,9 @@
+[Unit]
+Description=wob — Wayland Overlay Bar
+Documentation=man:wob(1)
+
+[Socket]
+ListenFIFO=%t/wobpipe
+
+[Install]
+WantedBy=sway-session.target
