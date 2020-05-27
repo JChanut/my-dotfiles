@@ -1,9 +1,10 @@
 [Unit]
-Description=wob — Wayland Overlay Bar
+Description=wob socket - Wayland Overlay Bar
 Documentation=man:wob(1)
 
 [Socket]
 ListenFIFO=%t/wobpipe
+ExecStartPost=-/usr/bin/systemctl --user set-environment WOBPIPE=%t/wobpipe
 
 [Install]
-WantedBy=sway-session.target
+WantedBy=sockets.target

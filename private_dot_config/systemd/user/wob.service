@@ -5,7 +5,8 @@ PartOf=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=tail -f %t/wobpipe | wob
+ExecStart=/usr/bin/wob
+StandardInput=socket
 
 [Install]
 Also=wob.socket
