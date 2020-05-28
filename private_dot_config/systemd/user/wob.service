@@ -7,6 +7,8 @@ PartOf=graphical-session.target
 Type=simple
 ExecStart=/usr/bin/wob
 StandardInput=socket
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 Also=wob.socket
