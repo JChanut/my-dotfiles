@@ -38,7 +38,7 @@ cursor_shape = ibeam
 #size_hints = false
 
 # "off", "left" or "right"
-scrollbar = right
+scrollbar = off
 
 # Base16 OceanicNext
 # Author: https://github.com/voronianski/oceanic-next-color-scheme

@@ -39,6 +39,12 @@ Plug 'HerringtonDarkholme/yats.vim'
 " Oceanic Next theme
 Plug 'mhartington/oceanic-next'
 
+" Vim devicons
+Plug 'ryanoasis/vim-devicons'
+
+" Intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
