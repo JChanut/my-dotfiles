@@ -9,7 +9,8 @@ ExecStart=/usr/bin/swayidle -w \
             timeout 300 'swaylock-fancy --pixelate --ignore-empty-password -f SF-Pro-Text-Regular' \
             timeout 600 'swaymsg "output * dpms off"' \
                 resume 'swaymsg "output * dpms on"' \
-            before-sleep 'swaylock-fancy --pixelate --ignore-empty-password -f SF-Pro-Text-Regular'
+            before-sleep 'swaylock-fancy --pixelate --ignore-empty-password -f SF-Pro-Text-Regular' \
+            lock 'swaylock-fancy --pixelate --ignore-empty-password -f SF-Pro-Text-Regular'
 
 [Install]
 WantedBy=sway-session.target
