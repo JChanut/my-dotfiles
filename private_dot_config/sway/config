@@ -95,6 +95,7 @@ for_window [app_id="blueman-manager"] floating enable
 for_window [app_id="gnome-tweaks"] floating enable
 for_window [app_id="xfce-polkit"] floating enable
 for_window [app_id="ulauncher"] floating enable, border none
+for_window [app_id="org.remmina.Remmina" title="Remmina Remote Desktop Client"] floating enable
 # Fix bug with firefox sharing window
 for_window [app_id="firefox" title="Firefox - Sharing Indicator"] floating enable
 
@@ -259,9 +260,9 @@ bindsym $mod+r mode "resize"
 bindsym $mod+l exec loginctl lock-session 
 
 # Control Volume, Mic and brightnes
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec pamixer -ui 2 && pamixer --get-volume > $WOBPIPE
+bindsym XF86AudioLowerVolume exec pamixer -ud 2 && pamixer --get-volume > $WOBPIPE
+bindsym XF86AudioMute exec pamixer --toggle-mute && ( pamixer --get-mute && echo 0 > $WOBPIPE ) || pamixer --get-volume > $WOBPIPE
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $WOBPIPE
 bindsym XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $WOBPIPE
