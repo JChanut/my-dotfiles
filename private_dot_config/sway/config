@@ -26,8 +26,7 @@ set $menu_run wofi --show=run | xargs swaymsg exec --
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #exec settimed catalina-timed
-exec_always setwallpaper $HOME/Pictures/train-and-mountain.jpg
-
+exec_always setwallpaper --mode scale /usr/share/backgrounds/archlinux/conference.png
 #
 # Example configuration:
 #
