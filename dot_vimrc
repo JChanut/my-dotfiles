@@ -45,6 +45,8 @@ Plug 'ryanoasis/vim-devicons'
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'ctrlpvim/ctrlp.vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
