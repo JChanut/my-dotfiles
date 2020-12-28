@@ -1,0 +1,11 @@
+[Unit]
+Description=Simple Alt-Tab daemon for SwayWM/i3
+PartOf=graphical-session.target
+
+[Service]
+Type=forking
+ExecStart=sway-alttab
+PIDFile=%t/sway-alttab.pid
+
+[Install]
+WantedBy=sway-session.target

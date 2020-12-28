@@ -183,7 +183,7 @@ client.focused #5294e2ff #383c4aff #7c818c
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 
-    bindsym ALT+Tab exec $HOME/.config/sway/swytch.sh
+#    bindsym ALT+Tab exec $HOME/.config/sway/swytch.sh
 #
 # Layout stuff:
 #
