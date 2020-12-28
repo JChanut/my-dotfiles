@@ -4,7 +4,7 @@ PartOf=graphical-session.target
 
 [Service]
 Type=forking
-ExecStart=sway-alttab
+ExecStart=/usr/local/bin/sway-alttab
 PIDFile=%t/sway-alttab.pid
 
 [Install]
