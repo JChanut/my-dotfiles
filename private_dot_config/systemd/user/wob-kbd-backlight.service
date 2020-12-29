@@ -4,7 +4,7 @@ PartOf=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=%h/bin/wob-kbd-backlight.py
+ExecStart=%h/.local/bin/wob-kbd-backlight.py
 
 [Install]
 WantedBy=sway-session.target
