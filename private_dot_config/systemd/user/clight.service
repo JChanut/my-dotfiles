@@ -1,0 +1,13 @@
+[Unit]
+Description=A C daemon that turns your webcam into a light sensor.
+Documentation=https://github.com/FedeDP/Clight/wiki
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/clight
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=sway-session.target
