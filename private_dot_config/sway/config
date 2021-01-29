@@ -260,6 +260,9 @@ bindsym $mod+r mode "resize"
 # Lock the screen
 bindsym $mod+ALT+l exec loginctl lock-session 
 
+# Password manager
+bindsym $mod+x exec rofi -modi 1pass:rofi-1pass -show 1pass
+
 # Control Volume, Mic and brightnes
 bindsym XF86AudioRaiseVolume exec pamixer -ui 2 && pamixer --get-volume > $WOBPIPE
 bindsym XF86AudioLowerVolume exec pamixer -ud 2 && pamixer --get-volume > $WOBPIPE
