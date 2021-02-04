@@ -2,11 +2,14 @@
 syntax enable
 
 " for vim 8
-if (has("termguicolors"))
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
 set number
+set ttymouse=sgr
 set mouse=a
 set hlsearch
 filetype plugin indent on
