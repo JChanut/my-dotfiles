@@ -263,6 +263,9 @@ bindsym $mod+ALT+l exec loginctl lock-session
 # Password manager
 bindsym $mod+x exec rofi -modi 1pass:$HOME/.local/bin/rofi-1pass -show 1pass
 
+# Emoji chooser
+bindsym $mod+Control+space exec rofi -show emoji -modi emoji
+
 # Control Volume, Mic and brightnes
 bindsym XF86AudioRaiseVolume exec pamixer -ui 2 && pamixer --get-volume > $WOBPIPE
 bindsym XF86AudioLowerVolume exec pamixer -ud 2 && pamixer --get-volume > $WOBPIPE
