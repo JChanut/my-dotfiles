@@ -20,7 +20,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 #set $menu ulauncher-toggle
 set $menu rofi -show drun -show-icons
-set $menu_run wofi --show=run | xargs swaymsg exec --
+set $menu_run rofi -show run -show-icons
 
 ### Output configuration
 #
