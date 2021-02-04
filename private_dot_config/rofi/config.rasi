@@ -1,4 +1,8 @@
 configuration {
+    modi: "drun,run,ssh,combi";
 	theme: "/usr/share/rofi/themes/solarized.rasi";
     font: "SF Pro Text 12";
+}
+element-icon {
+    size: 1.0em;
 }

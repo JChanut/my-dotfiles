@@ -18,8 +18,8 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu wofi --show=drun --allow-images | xargs swaymsg exec --
-set $menu ulauncher-toggle
+#set $menu ulauncher-toggle
+set $menu rofi -show drun -show-icons
 set $menu_run wofi --show=run | xargs swaymsg exec --
 
 ### Output configuration
