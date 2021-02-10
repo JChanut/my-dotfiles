@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -85,8 +85,8 @@ assign [class="Microsoft Teams - Preview"] workspace 5
 assign [class="Signal"] workspace 5
 
 ### Open some window float mode
-for_window [app_id="Alacritty" title="^system update$"] floating enable
-for_window [app_id="Alacritty" title="nmtui"] floating enable
+for_window [app_id="kitty" title="^system update$"] floating enable
+for_window [app_id="kitty" title="nmtui"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="system-config-printer"] floating enable
