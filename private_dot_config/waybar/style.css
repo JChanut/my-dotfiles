@@ -2,7 +2,7 @@
     border: none;
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: 'SF Pro Text', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Text', "Font Awesome";
     /*min-height: 0;*/
 }
 
