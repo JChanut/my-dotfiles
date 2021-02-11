@@ -2,6 +2,6 @@
 Name=nmtui
 Type=Application
 Comment=NetworkManager ncurse application
-Exec=termite -e nmtui
+Exec=nmtui
 Icon=application-network
-Terminal=false
+Terminal=true
