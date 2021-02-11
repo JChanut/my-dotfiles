@@ -1,0 +1,53 @@
+" Theme
+syntax enable
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+set number
+set mouse=a
+set hlsearch
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+let g:airline_powerline_fonts = 1
+
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+" NERD tree will be loaded on the first invocation of NERDTreeToggle command
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" Status bar
+Plug 'vim-airline/vim-airline'
+
+" Declare the list of plugins.
+Plug 'tpope/vim-sensible'
+
+" Git support
+Plug 'tpope/vim-fugitive'
+
+" TypeScript support
+Plug 'HerringtonDarkholme/yats.vim'
+
+" Oceanic Next theme
+Plug 'mhartington/oceanic-next'
+
+" Vim devicons
+Plug 'ryanoasis/vim-devicons'
+
+" Intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'ctrlpvim/ctrlp.vim'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+colorscheme OceanicNext
+
