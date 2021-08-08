@@ -151,7 +151,7 @@
         "interval": 3600,                     // every hour
         "exec": "checkupdates | wc -l",       // # of updates
         "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "kitty -T 'system update' -- sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
+        "on-click": "foot -T 'system update' -- sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
         "signal": 8
     },
     "wlr/taskbar": {
