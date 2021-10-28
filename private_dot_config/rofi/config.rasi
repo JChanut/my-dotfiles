@@ -1,11 +1,11 @@
 configuration {
     modi: "drun,run,ssh,combi";
-	theme: "/usr/share/rofi/themes/solarized.rasi";
     font: "SF Pro Text 12";
     terminal: "/usr/bin/foot";
     ssh-command: "{terminal} {ssh-client} {host}";
     run-shell-command: "{terminal} {cmd}";
 }
+@theme "/usr/share/rofi/themes/solarized.rasi"
 element-icon {
     size: 1.0em;
 }
