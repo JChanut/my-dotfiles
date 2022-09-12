@@ -51,3 +51,8 @@ call plug#end()
 
 colorscheme OceanicNext
 
+" CoC plugin configuration
+" Use <cr> to confirm completion
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+" Use to navigate the completion list:
+inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
